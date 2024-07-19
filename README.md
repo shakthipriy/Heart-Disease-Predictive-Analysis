@@ -50,26 +50,28 @@ https://github.com/shakthipriy/Heart-Disease-Predictive-Analysis.git
 
 It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from matplotlib.colors import ListedColormap
-from sklearn.model_selection import train_test_split
-from scipy.stats import boxcox
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.model_selection import GridSearchCV, StratifiedKFold
-from sklearn.metrics import classification_report, accuracy_score
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
+# import numpy as np
+# import pandas as pd
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# from matplotlib.colors import ListedColormap
+# from sklearn.model_selection import train_test_split
+# from scipy.stats import boxcox
+# from sklearn.pipeline import Pipeline
+# from sklearn.preprocessing import StandardScaler
+# from sklearn.neighbors import KNeighborsClassifier
+# from sklearn.svm import SVC
+# from sklearn.model_selection import GridSearchCV, StratifiedKFold
+# from sklearn.metrics import classification_report, accuracy_score
+# from sklearn.tree import DecisionTreeClassifier
+# from sklearn.ensemble import RandomForestClassifier
 
 3. To Read the dataset
 
-df = pd.read_csv('heart.csv')
+# df = pd.read_csv('heart.csv')
 df
+
+
 #  Dataset Description:
 Variable	Description
 * age	Age of the patient in years
@@ -103,9 +105,10 @@ Variable	Description
 
 # Dataset Basic Information
 
-df.info()
+# df.info()
 
-5. Activate the Virtual Environment (Optional)
+
+# Activate the Virtual Environment (Optional)
 
  # Google colab <Environment_Name>
  
