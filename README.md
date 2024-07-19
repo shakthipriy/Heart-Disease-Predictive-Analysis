@@ -50,13 +50,70 @@ https://github.com/shakthipriy/Heart-Disease-Predictive-Analysis.git
 
 It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from matplotlib.colors import ListedColormap
+from sklearn.model_selection import train_test_split
+from scipy.stats import boxcox
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
+from sklearn.metrics import classification_report, accuracy_score
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 
+3. To Read the dataset
 
-3. Activate the Virtual Environment (Optional)
+df = pd.read_csv('heart.csv')
+df
+#  Dataset Description:
+Variable	Description
+age	Age of the patient in years
+sex	Gender of the patient (0 = male, 1 = female)
+cp	Chest pain type:
+0: Typical angina
+1: Atypical angina
+2: Non-anginal pain
+3: Asymptomatic
+trestbps	Resting blood pressure in mm Hg
+chol	Serum cholesterol in mg/dl
+fbs	Fasting blood sugar level, categorized as above 120 mg/dl (1 = true, 0 = false)
+restecg	Resting electrocardiographic results:
+0: Normal
+1: Having ST-T wave abnormality
+2: Showing probable or definite left ventricular hypertrophy
+thalach	Maximum heart rate achieved during a stress test
+exang	Exercise-induced angina (1 = yes, 0 = no)
+oldpeak	ST depression induced by exercise relative to rest
+slope	Slope of the peak exercise ST segment:
+0: Upsloping
+1: Flat
+2: Downsloping
+ca	Number of major vessels (0-4) colored by fluoroscopy
+thal	Thalium stress test result:
+0: Normal
+1: Fixed defect
+2: Reversible defect
+3: Not described
+target	Heart disease status (0 = no disease, 1 = presence of disease)
+
+# Dataset Basic Information
+
+df.info()
+
+5. Activate the Virtual Environment (Optional)
+
+ # Google colab <Environment_Name>
+ 
 
 Activate the virtual environment based on your operating system:
 
+# Contributing
+We welcome contributions from the community! If you have any ideas or suggestions for improving the project, please feel free to create an issue or submit a pull request.
 
-
-4. Install Dependencies
-5.   
+# Acknowledgements
+This project was inspired by the Kaggle dataset on Heart disease  Prediction and the corresponding competition. We also acknowledge the open-source Python libraries used in this project and their contributors.   
